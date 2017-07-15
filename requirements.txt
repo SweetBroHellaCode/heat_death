@@ -10,4 +10,3 @@ Jinja2==2.9.6
 macholib==1.5.1
 python-dateutil==1.5
 virtualenv==15.1.0
-Werkzeug==0.12.21
