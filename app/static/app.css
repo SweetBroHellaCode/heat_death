@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+.container-fluid {
+     margin: 0 auto;
+     width: 98%; 
+
+}
+
+.thumbnail-containter {
+	padding-top: 40px;
+}
+
+.nav>li>a:hover,.nav>li>a:active,
+.nav>li>a:focus {
+	font-color: white;
+    text-decoration: none;
+    background-color: red;
+}
+
