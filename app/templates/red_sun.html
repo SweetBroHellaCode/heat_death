@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid" ng-app="heatDeathApp" ng-controller="storyModalController">
+    <div class="story-main red-sun">
+	    <div class ="row">
+	    	<div class="col-sm-2"></div>
+	    		<div class="col-sm-6">
+	    			<div class="jumbotron">
+	    				<div class="row">
+							<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							  <div class="btn-group" role="group" ng-click="getCurrentStory('dreamingStars')">
+							    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-star-o"></i></button>
+							  </div>
+							  <div class="btn-group" role="group" ng-click="getCurrentStory('theJanitor')">
+							    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-wrench"></i></button>
+							  </div>
+							  <div class="btn-group" role="group" ng-click="getCurrentStory('byDust')">
+							    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-mars-stroke-h"></i></button>
+							  </div>
+							  <div class="btn-group" role="group" ng-click="getCurrentStory('notesToMyself')">
+							    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-book"></i></button>
+							  </div>
+							  <div class="btn-group" role="group" ng-click="getCurrentStory('theFinalCourse')">
+							    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-cutlery"></i></button>
+							  </div>
+							  <div class="btn-group" role="group" ng-click="getCurrentStory('theGreatestTreature')">
+							    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-diamond"></i></button>
+							  </div>
+							</div>
+						</div>
+						<div class="story-main-text">
+							<pre>
+								<p style="color: white; font-size: 2vmin" ng-bind-html="storyObject.currentUserStory"></p>
+							</pre>
+						</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    <div class="col-sm-3"></div>
+    </div>
+</div>
+
+{% endblock %}
