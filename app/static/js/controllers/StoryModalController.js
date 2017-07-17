@@ -28,7 +28,6 @@ StoryModalController($scope, $http) {
 
 	// Swap the story selection on user input
 	$scope.getCurrentStory = function(story) {
-		console.log(story)
 		if (story == "theJanitor") {
 				$scope.loadStoryObject("the_janitor", $scope.storyObject.theJanitor);
 		} else if (story == "dreamingStars") {
