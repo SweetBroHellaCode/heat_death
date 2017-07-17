@@ -11,14 +11,13 @@ StoryModalController($scope, $http) {
 		theGreatestTreasure: "",
 		currentUserStory: "Signals Detected"
 	};
-		
+
 	// Load a story from firebase
 	$scope.loadStoryObject = function(storyName, storyToUpdate) {
 		$http({
 				method: 'GET',
 				url: '/getStory?story=' + storyName
 			}).then(function successCallback(response) {
-					console.log(response)
 					$scope.storyObject.currentUserStory = response.data
 					storyToUpdate = response.data
 				// when the response is available
