@@ -70,6 +70,14 @@ pre {
 	background-image: url("img/heat-death-signal-lost.gif");
 }
 
+.signal-green-sun {
+	background-image: url("img/heat-death-green-sun.gif");
+}
+
+.signal-swirl-sun {
+	background-image: url("img/heat-death-swirl-sun.gif");
+}
+
 .red-sun {
 	background-image: url("img/heat-death-red-sun.gif");
 }
