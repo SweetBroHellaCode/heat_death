@@ -9,8 +9,7 @@ import sys
 # Add vendor directory to module search path
 parent_dir = os.path.abspath(os.path.dirname(__file__))
 vendor_dir = sys.path.append(parent_dir + '/vendor')
-print(vendor_dir)
-print(sys.path)
+
 from firebase import firebase
 
 firebase_db = firebase.FirebaseApplication(app.config["FIREBASE_DB_URL"][0], None)

@@ -22,7 +22,7 @@ body {
 }
 
 .story-main {
-	opacity: 0.8;
+	background: rgba(0, 0, 0, .6);
    	height:98%;
    	width: 98%;
    	padding-left: 20%;
@@ -30,8 +30,11 @@ body {
    	background-position: center;
     background-size: cover;
 }
-
+#main-text-container{
+	background: rgba(0, 0, 0, 0.6);
+}
 .story-main-text {
+
 	word-wrap: break-word;
 	overflow: auto;
 	height: 96%;
@@ -45,7 +48,7 @@ pre {
   	white-space: pre-wrap;
   	word-break: normal;
   	margin-top: 20px;
-	opacity: .5;
+
 	background-color: black;
 }
 
@@ -53,7 +56,6 @@ pre {
 	margin-top: 20px;
 	width: 96%;
 	height: 90%;
-	opacity: .5;
 	background-color: black;
 }
 
